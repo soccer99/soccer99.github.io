@@ -6,10 +6,10 @@ html, body {
 
 h1 {
 	font-size: 3em;
-	font-family: 'Merriweather';
+	font-family: 'Arimo', sans-serif;
 }
 h2, h3, h4 {
-	font-family: 'Inconsolata', monospace;
+	font-family: 'Roboto', sans-serif;
 }
 
 a {

@@ -7,10 +7,19 @@ html, body {
 h1 {
 	font-size: 3em;
 	font-family: 'Merriweather';
-	font-weight: light;
 }
-h2 {
+h2, h3, h4 {
 	font-family: 'Inconsolata', monospace;
+}
+
+a {
+	color: rgb(185,185,185);
+}
+a:hover {
+	color: white!important;
+}
+a:visited {
+	color: rgb(185,185,185);
 }
 
 #top-header {
@@ -26,7 +35,21 @@ h2 {
 	justify-content: center;
 }
 
-#mid-header {
+#about {
+	width: 100%;
+	height: 100%;
+	background: url(../images/hollywood.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#work {
 	width: 100%;
 	height: 100%;
 	background: url(../images/bg2.jpg) no-repeat center center fixed;
@@ -34,6 +57,35 @@ h2 {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#contact {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/mail_web.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.footer-links {
+	width: 100%;
+	height: 40px;
+	background-color: rgba(0,0,0,.5);
+	text-align: center;
 }
 
 .darken {
@@ -46,7 +98,7 @@ h2 {
 
 .float-top-center {
 	z-index: 200;
-	background-color: rgba(0,0,0, 0.5);
+	background-color: rgba(0,0,0, 0.8);
 
 	width: 350px;
 	margin: 0 auto;
@@ -57,19 +109,72 @@ h2 {
 	text-align: left;
 }
 
-.less-margin {
-	margin-bottom: 25px;
+.work-container {
+	padding: 5px;
 }
 
+.work-box {
+	background-color: rgba(250,250,250, 0.4);
+	border-radius: 25px;
+	padding: 50px;
+
+	color: white;
+	text-align: center;
+}
+
+.column {
+	padding: 5px;
+}
+
+.box {
+	background-color: rgba(0,0,0, 0.8);
+	border-radius: 25px;
+	padding: 50px;
+
+	color: white;
+	text-align: center;
+}
+
+
+
 .navigate-bottom {
+	z-index: 300;
 	position: absolute;
 	width: 50px;
 	left: 50%;
 	margin-left: -25px;
-	bottom: 5px;
+	bottom: 25px;
 }
 
 .button-more {
+	cursor: pointer;
 	width: 50px;
-	background-color: white!important;
+	background-color: rgba(185,185,185,.8);
+	border: 0px;
 }
+
+.button-more:hover {
+	background-color: gray;
+}
+
+.inbetween {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.navbar-inverse {
+	background-color: rgba(25,25,25,0.9);
+}
+
